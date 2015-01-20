@@ -35,8 +35,8 @@ static STAStaticStartAppAd *commonAd = nil;
 +(void)setupWithAppId:(NSString*)appId andDevId:(NSString*)devId
 {
     STAStartAppSDK* sdk = [STAStartAppSDK sharedInstance];
-    sdk.appID = @"210361800";
-    sdk.devID = @"110338714";
+    sdk.appID = appId;
+    sdk.devID = devId;
     [self commonAd];
 }
 
