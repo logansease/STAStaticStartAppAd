@@ -1,0 +1,11 @@
+this is a helper subclass for the Start App ad platform.
+I wrote this to have a simple way to handle showing ads through a static method like most ad platforms allow. 
+Unfortunately StartApps developers thought this was too difficult to do, so I have implemented it for them.
+
+Now in your app delegate, initialize interstitial ads with
+
+[STAStaticStartAppAd setupWithAppId:@“appId” andDevId:@“devId”];
+
+and show ads where ever you like with
+
+[STAStaticStartAppAd showAd];
